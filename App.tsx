@@ -70,6 +70,7 @@ const App: React.FC = () => {
                       } else {
                           const parts = value.split('/');
                           if (parts.length === 3) {
+                              // Assuming dd/mm/yyyy format
                               const isoDate = new Date(+parts[2], +parts[1] - 1, +parts[0]);
                               if (!isNaN(isoDate.getTime())) {
                                   record[key] = isoDate;
@@ -100,13 +101,14 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const loadInitialData = async () => {
-      const dataUrl = '/data.xlsx';
+      // Use a relative path to be compatible with GitHub Pages subdirectories
+      const dataUrl = 'data.xlsx';
       try {
         const response = await fetch(dataUrl);
         if (!response.ok) {
           if (response.status === 404) {
              setShowFileUpload(true);
-             setError(null);
+             setError("ไม่พบไฟล์ 'data.xlsx'. กรุณาวางไฟล์ในโฟลเดอร์หลักของโปรเจกต์ หรืออัปโหลดด้วยตนเอง");
           } else {
             throw new Error(`ไม่สามารถโหลดไฟล์ได้ (Status: ${response.status})`);
           }
@@ -238,7 +240,6 @@ const App: React.FC = () => {
           <div className="w-full max-w-3xl flex flex-col items-center">
               <div className="glass-card rounded-lg p-6 sm:p-8 w-full mx-auto flex flex-col items-center text-center mb-6">
                 <h2 className="text-2xl font-bold text-yellow-400 mb-2">ไม่พบไฟล์ข้อมูลเริ่มต้น</h2>
-                <p className="text-[var(--text-subtle)]">ไม่พบไฟล์ `data.xlsx` ในระบบ หรือเกิดข้อผิดพลาดในการโหลด</p>
                 <p className="text-[var(--text-subtle)] mt-1">กรุณาอัปโหลดไฟล์ข้อมูลเพื่อเริ่มต้นใช้งาน</p>
                 {error && <p className="mt-4 text-red-400 bg-red-900/50 p-3 rounded-lg text-sm w-full">{error}</p>}
               </div>
