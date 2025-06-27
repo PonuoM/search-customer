@@ -1,6 +1,6 @@
 {
   "name": "search-customer",
-  "description": "An application to search and display customer data from an uploaded Excel file. Users can search by name or phone number to see purchase history and a summary of their activity.",
+  "description": "An application to search customer data from a Google Sheet. It features an AI Assistant powered by Gemini to answer natural language questions about customer purchase history and trends.",
   "requestFramePermissions": [],
   "prompt": ""
 }
