@@ -1,0 +1,6 @@
+{
+  "name": "search-customer",
+  "description": "An application to search and display customer data from an uploaded Excel file. Users can search by name or phone number to see purchase history and a summary of their activity.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
