@@ -1,13 +1,13 @@
 
 import React, { useState, useCallback, useEffect, useMemo } from 'react';
-import { CustomerData, CustomerSummaryData } from './types';
-import SearchBar from './components/SearchBar';
-import ResultsTable from './components/ResultsTable';
-import Pagination from './components/Pagination';
-import CustomerSummary from './components/CustomerSummary';
-import ThemeToggle from './components/StatCard';
-import AiAssistant from './components/AiAssistant';
-import FileUpload from './components/FileUpload';
+import { CustomerData, CustomerSummaryData } from './types.ts';
+import SearchBar from './components/SearchBar.tsx';
+import ResultsTable from './components/ResultsTable.tsx';
+import Pagination from './components/Pagination.tsx';
+import CustomerSummary from './components/CustomerSummary.tsx';
+import ThemeToggle from './components/StatCard.tsx';
+import AiAssistant from './components/AiAssistant.tsx';
+import FileUpload from './components/FileUpload.tsx';
 
 declare var XLSX: any;
 

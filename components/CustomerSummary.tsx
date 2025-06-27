@@ -1,10 +1,10 @@
 import React from 'react';
-import { CustomerSummaryData } from '../types';
-import UserIcon from './icons/UserIcon';
-import PhoneIcon from './icons/PhoneIcon';
-import AddressIcon from './icons/AddressIcon';
-import DollarIcon from './icons/DollarIcon';
-import CartIcon from './icons/CartIcon';
+import { CustomerSummaryData } from '../types.ts';
+import UserIcon from './icons/UserIcon.tsx';
+import PhoneIcon from './icons/PhoneIcon.tsx';
+import AddressIcon from './icons/AddressIcon.tsx';
+import DollarIcon from './icons/DollarIcon.tsx';
+import CartIcon from './icons/CartIcon.tsx';
 
 interface CustomerSummaryProps {
   data: CustomerSummaryData;

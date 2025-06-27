@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GoogleGenAI } from '@google/genai';
-import { CustomerData } from '../types';
-import AiIcon from './icons/AiIcon';
+import { CustomerData } from '../types.ts';
+import AiIcon from './icons/AiIcon.tsx';
 
 interface AiAssistantProps {
   customerData: CustomerData[];

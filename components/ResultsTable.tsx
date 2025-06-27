@@ -1,5 +1,5 @@
 import React from 'react';
-import { CustomerData } from '../types';
+import { CustomerData } from '../types.ts';
 
 interface ResultsTableProps {
   records: CustomerData[];

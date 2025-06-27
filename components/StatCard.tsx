@@ -1,6 +1,5 @@
 import React from 'react';
-import SunIcon from './icons/TrendIcons';
-import MoonIcon from './icons/TrendIcons';
+import MoonIcon, { SunIcon } from './icons/TrendIcons.tsx';
 
 interface ThemeToggleProps {
   theme: 'light' | 'dark';
