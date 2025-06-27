@@ -5,7 +5,7 @@ import SearchBar from './components/SearchBar.tsx';
 import ResultsTable from './components/ResultsTable.tsx';
 import Pagination from './components/Pagination.tsx';
 import CustomerSummary from './components/CustomerSummary.tsx';
-import ThemeToggle from './components/StatCard.tsx';
+import StatCard from './components/StatCard.tsx';
 import AiAssistant from './components/AiAssistant.tsx';
 import FileUpload from './components/FileUpload.tsx';
 
@@ -322,7 +322,7 @@ const App: React.FC = () => {
             <div className="blob blob2"></div>
         </div>
         
-        <ThemeToggle theme={theme} setTheme={setTheme} />
+        <StatCard theme={theme} setTheme={setTheme} />
         
         {renderContent()}
     </div>

@@ -1,12 +1,13 @@
+
 import React from 'react';
 import MoonIcon, { SunIcon } from './icons/TrendIcons.tsx';
 
-interface ThemeToggleProps {
+interface StatCardProps {
   theme: 'light' | 'dark';
   setTheme: (theme: 'light' | 'dark') => void;
 }
 
-const ThemeToggle: React.FC<ThemeToggleProps> = ({ theme, setTheme }) => {
+const StatCard: React.FC<StatCardProps> = ({ theme, setTheme }) => {
     const toggleTheme = () => {
         setTheme(theme === 'light' ? 'dark' : 'light');
     };
@@ -22,4 +23,4 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({ theme, setTheme }) => {
     );
 };
 
-export default ThemeToggle;
+export default StatCard;
